@@ -14,39 +14,56 @@
     <a href="life-in-japan.html">Life in Japan</a>
     <a href="visa-admin.html">Visa & Admin</a>
     <a href="peer-support.html">Peer Support</a>
+    <a href="multilingual-support.html">Multilingual</a>
   </nav>
 </header>
 
 <main>
-  <h2>Understanding Academic Culture</h2>
-
   <p>
-    Academic communication in Japan may feel different for international
-    students. Respect, punctuality, and clear communication are highly valued.
+    Academic systems and expectations in Japan may differ from those in other
+    countries. This section explains how to succeed academically at KCGI.
   </p>
 
-  <h3>Class Participation</h3>
-  <p>
-    Students are expected to attend classes regularly, participate in
-    discussions, and complete assignments on time.
-  </p>
+  <button onclick="toggleSection('classes')">🎓 Classes & Attendance</button>
+  <div id="classes" class="hidden-section">
+    <p>
+      Attendance and participation are important. Attendance is recorded through
+      Campus Plan or the My ID app for face-to-face classes.
+    </p>
+    <img src="assets/images/4.jpg">
+    <img src="assets/images/9.jpg">
+    <img src="assets/images/13.jpg">
+    <img src="assets/images/14.jpg">
+    <img src="assets/images/15.jpg">
+  </div>
 
-  <h3>Group Work</h3>
-  <p>
-    Group projects are common. Clear communication, responsibility, and mutual
-    respect are essential for successful collaboration.
-  </p>
+  <button onclick="toggleSection('assignments')">📝 Assignments & Grading</button>
+  <div id="assignments" class="hidden-section">
+    <p>
+      Assignments are managed through King LMS. Students must submit work on
+      time and follow academic honesty rules.
+    </p>
+     <img src="assets/images/19.jpg">
+  </div>
 
-  <h3>Communication with Faculty</h3>
-  <p>
-    Emails should be polite and clear. If students are unsure, they are
-    encouraged to ask questions rather than stay silent.
-  </p>
+  <button onclick="toggleSection('communication')">📧 Communication</button>
+  <div id="communication" class="hidden-section">
+    <p>
+      Students can communicate with instructors through King LMS messaging.
+      Polite and clear communication is essential.
+    </p>
+    <img src="assets/images/study.jpg">
+    <img src="assets/images/17.jpg">
+  </div>
+
+  
 </main>
 
 <footer>
   <p>© Student Support Hub | KCGI</p>
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>
+

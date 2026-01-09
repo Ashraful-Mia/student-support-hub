@@ -5,6 +5,7 @@
   <title>Multilingual Support | Student Support Hub</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
 <header>
@@ -19,54 +20,123 @@
 </header>
 
 <main>
-  <h2>Supporting Students Across Languages</h2>
 
-  <p>
-    Language can be a major barrier for international students. This section
-    provides simple multilingual guidance to help students communicate and
-    manage daily life in Japan more confidently.
-  </p>
+  <section>
+    <h2>Supporting Students Across Languages</h2>
+    <p>
+      Language barriers can affect academic performance, daily communication,
+      and overall confidence. This section provides practical language support
+      resources to help international students communicate more effectively
+      while living and studying in Japan.
+    </p>
+  </section>
 
-  <h3>Basic Japanese Phrases</h3>
+  <!-- BUTTON 1 -->
+  <button class="btn" onclick="toggleSection('basic-japanese')">
+    🗣️ Basic Japanese Phrases
+  </button>
 
-  <table>
-    <tr>
-      <th>English</th>
-      <th>Japanese</th>
-      <th>Pronunciation</th>
-    </tr>
-    <tr>
-      <td>Hello</td>
-      <td>こんにちは</td>
-      <td>Konnichiwa</td>
-    </tr>
-    <tr>
-      <td>Thank you</td>
-      <td>ありがとうございます</td>
-      <td>Arigatou gozaimasu</td>
-    </tr>
-    <tr>
-      <td>Excuse me</td>
-      <td>すみません</td>
-      <td>Sumimasen</td>
-    </tr>
-    <tr>
-      <td>I don’t understand</td>
-      <td>わかりません</td>
-      <td>Wakarimasen</td>
-    </tr>
-  </table>
+  <div id="basic-japanese" class="hidden-section">
+    <table>
+      <tr>
+        <th>English</th>
+        <th>Japanese</th>
+        <th>Pronunciation</th>
+      </tr>
+      <tr>
+        <td>Hello</td>
+        <td>こんにちは</td>
+        <td>Konnichiwa</td>
+      </tr>
+      <tr>
+        <td>Thank you</td>
+        <td>ありがとうございます</td>
+        <td>Arigatou gozaimasu</td>
+      </tr>
+      <tr>
+        <td>Excuse me</td>
+        <td>すみません</td>
+        <td>Sumimasen</td>
+      </tr>
+      <tr>
+        <td>I don’t understand</td>
+        <td>わかりません</td>
+        <td>Wakarimasen</td>
+      </tr>
+    </table>
+  </div>
 
-  <h3>Future Language Support</h3>
-  <p>
-    In the future, this platform can be expanded to include additional
-    languages such as Bangla, Chinese, or Vietnamese based on student needs.
-  </p>
+  <!-- BUTTON 2 -->
+  <button class="btn" onclick="toggleSection('paid-courses')">
+    🎓 Paid Japanese Language Courses
+  </button>
+
+  <div id="paid-courses" class="hidden-section">
+    <p>
+      For students who prefer structured learning, paid Japanese language
+      courses are available in multiple formats. These courses offer guided
+      instruction, certified teachers, and flexible schedules.
+    </p>
+
+    <ul>
+      <li>
+        <strong>Bangla → Japanese</strong><br>
+        Suitable for Bangladeshi students who want explanations in Bangla.
+        Often offered through private tutors and online platforms.
+      </li>
+
+      <li>
+        <strong>English → Japanese</strong><br>
+        Widely available in language schools, online platforms, and community
+        classes. Ideal for beginners and intermediate learners.
+      </li>
+
+      <li>
+        <strong>Chinese → Japanese</strong><br>
+        Designed for Chinese-speaking students, focusing on grammar differences
+        and kanji usage.
+      </li>
+    </ul>
+
+    <p>
+      Students are advised to review course fees, schedules, and teaching
+      methods before enrollment to choose the best option for their needs.
+    </p>
+  </div>
+
+  <!-- BUTTON 3 -->
+  <button class="btn" onclick="toggleSection('future-support')">
+    🌍 Future Language Expansion
+  </button>
+
+  <div id="future-support" class="hidden-section">
+    <p>
+      This platform can be expanded to include multilingual explanations and
+      learning resources in additional languages such as Bangla, Chinese, or
+      Vietnamese.
+    </p>
+    <p>
+      Expanding language support promotes inclusivity, equal access to
+      information, and a more welcoming academic environment for all students
+      at KCGI.
+    </p>
+  </div>
+
 </main>
 
 <footer>
   <p>© Student Support Hub | KCGI</p>
 </footer>
 
+<!-- SIMPLE TOGGLE SCRIPT -->
+<script>
+  function toggleSection(id) {
+    const section = document.getElementById(id);
+    section.style.display =
+      section.style.display === "block" ? "none" : "block";
+  }
+</script>
+
 </body>
 </html>
+
